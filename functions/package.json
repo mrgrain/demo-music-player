@@ -1,0 +1,24 @@
+{
+    "name": "dialogflowFirebaseFulfillment",
+    "description": "This is the fulfillment for a the Spotify bot example on Zwerm.io.",
+    "version": "1.0.0",
+    "private": true,
+    "license": "MIT",
+    "author": "Prefer Ltd",
+    "engines": {
+        "node": "~8.0"
+    },
+    "scripts": {
+        "start": "firebase serve --only functions:dialogflowFirebaseFulfillment",
+        "deploy": "firebase deploy --only functions:dialogflowFirebaseFulfillment"
+    },
+    "dependencies": {
+        "@zwerm/zwermapi-client": "^0.5.0",
+        "actions-on-google": "^2.2.0",
+        "dialogflow": "^4.0.3",
+        "dialogflow-fulfillment": "^0.4.1",
+        "firebase-admin": "^5.13.1",
+        "firebase-functions": "^1.1.0",
+        "spotify-web-api-node": "^3.1.1"
+    }
+}
